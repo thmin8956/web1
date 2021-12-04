@@ -88,10 +88,12 @@
         console.log(prediction[0].probability);
         if(prediction[0].probability > 0.5){
           console.log('day');
-
+          document.querySelector('body').style.backgroundColor = 'white';
+          document.querySelector('body').style.color = 'black';
         } else {
           console.log('night');
-          setTimeout(tid);
+          document.querySelector('body').style.backgroundColor = 'black';
+          document.querySelector('body').style.color = 'white';
         }
     }
 </script>
